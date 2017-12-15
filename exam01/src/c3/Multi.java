@@ -4,13 +4,16 @@ import dto.Person;
 import process.Process;
 
 public class Multi {
-	int multinum = 1;
-	Person[] p = new Process().getPersonList();
-	
-	
-	for(Person dto : p) {
-		multinum *= dto.getScore();
+	public int getMulti() {
+		Person[] p = new Process().getPersonList();
+		int multinum = 1;
+		
+		
+		for(Person dto : p) {
+			multinum *= dto.getScore();
+		}
+		
+		return multinum;
 	}
 	
-	return multi;
 }
