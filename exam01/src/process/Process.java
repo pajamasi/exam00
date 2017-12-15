@@ -1,5 +1,6 @@
 package process;
 
+import dto.Person;
 
 
 public class Process {
